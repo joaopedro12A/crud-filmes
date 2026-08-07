@@ -1,3 +1,26 @@
 GET http://localhost:3000/filmes
 
+### 
+POST http://localhost:3000/filmes
+Content-Type: application/json
 
+{
+    "titulo": "Matrix",
+    "genero": "Ficção Científica",
+    "duracao": 136,
+    "classificacao": "14"
+}
+
+### 
+PUT http://localhost:3000/filmes/13
+Content-Type: application/json
+
+{
+    "titulo": "Matrix Reloaded",
+    "genero": "Ficção Científica",
+    "duracao": 138,
+    "classificacao": "14"
+}
+
+### 
+DELETE http://localhost:3000/filmes/13
