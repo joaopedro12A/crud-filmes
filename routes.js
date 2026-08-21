@@ -3,7 +3,6 @@ const router = express.Router();
 
 const db = require("./db");
 
-// Mostrar todos os filmes
 router.get("/filmes", (req, res) => {
     db.query("SELECT * FROM filmes_JoaoPedroViniciusFerreira", (erro, resultado) => {
         if (erro) {
@@ -14,7 +13,6 @@ router.get("/filmes", (req, res) => {
     });
 });
 
-// Adicionar filme
 router.post("/filmes", (req, res) => {
     const { titulo, genero, duracao, classificacao } = req.body;
 
@@ -29,7 +27,7 @@ router.post("/filmes", (req, res) => {
     });
 });
 
-// Atualizar filme
+
 router.put("/filmes/:id", (req, res) => {
     const { id } = req.params;
     const { titulo, genero, duracao, classificacao } = req.body;
@@ -45,7 +43,7 @@ router.put("/filmes/:id", (req, res) => {
     });
 });
 
-// Excluir filme
+
 router.delete("/filmes/:id", (req, res) => {
     const { id } = req.params;
 
