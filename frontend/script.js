@@ -1,6 +1,5 @@
-// ATENÇÃO: troque a URL abaixo pela URL do backend depois do deploy na Vercel
-// Exemplo: "https://crud-filmes-backend.vercel.app"
-const API_URL = "https://SEU-BACKEND.vercel.app";
+
+const API_URL = "https://crud-filmes-x3eg-git-main-joao-pedros-projects-0a598200.vercel.app/";
 
 async function buscarFilmes() {
     try {
