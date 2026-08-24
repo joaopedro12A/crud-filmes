@@ -1,5 +1,5 @@
 
-const API_URL = "https://crud-filmes-rho.vercel.app";
+const API_URL = "https://crud-filmes-u5jr.vercel.app";
 
 async function buscarFilmes() {
     try {
