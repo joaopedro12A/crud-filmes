@@ -1,6 +1,10 @@
+// ATENÇÃO: troque a URL abaixo pela URL do backend depois do deploy na Vercel
+// Exemplo: "https://crud-filmes-backend.vercel.app"
+const API_URL = "https://SEU-BACKEND.vercel.app";
+
 async function buscarFilmes() {
     try {
-        const resposta = await fetch("/filmes");
+        const resposta = await fetch(`${API_URL}/filmes`);
 
         if (!resposta.ok) {
             throw new Error("Erro ao buscar filmes");
